@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Siwar Boutaleb</title>
+    <style>
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #f4f4f9;
+        }
+
+        nav {
+            background-color: #e6e6fa;
+            margin-bottom: 60px; 
+            padding: 10px 0;
+            border-radius: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 8px 16px;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #090a0a;
+            border-bottom: 2px solid #0b0f11;
+        }
+
+        section {
+            margin-top: 60px;
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 0;
+        }
+
+        h2 {
+            font-size: 2em; 
+        }
+
+        p  {
+            font-size: 18px; 
+            line-height: 1.6; 
+        }
+
+        .subtitle {
+            font-size: 1.2em;
+            margin-top: 10px;
+            font-weight: normal;
+        }
+
+        .caption {
+            font-style: italic;
+            margin-top: 20px;
+        }
+
+        ul.projects, ul.education {
+            list-style: none;
+            padding-left: 0;
+            line-height: 1.6;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Barre de navigation -->
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <hr width="70%"/> <!-- Ligne horizontale -->
+
+    <main>
+        <!-- Partie accueil -->
+        <header id="home">
+            <h1 style="color: red;">Siwar Boutaleb</h1>
+            <p class="subtitle">Software architecture engineer</p>
+            <!-- Ajout d'une image illustrative -->
+            <img src="siwar.jpg" alt="Photo de profil Siwar Boutaleb" width="200" style="border-radius: 100px; margin-top: 20px;">
+        </header>
+
+        <!-- Section À propos -->
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I am a passionate and dedicated software engineer with strong skills in programming and system architecture.</p>
+            <p>I enjoy building innovative digital solutions and continuously improving my knowledge.</p>   
+            <p>Motivated and detail-oriented, I thrive in both individual and team projects.</p>
+
+            <!-- Ajout vidéo personnelle -->
+            <center>
+                <video width="500" height="300" controls>
+                    <source src="Vidéo.mp4" type="video/mp4" />
+                </video>
+            </center>
+        </section>
+
+        <!-- Section projets -->
+        <section id="work">
+            <h2>My Projects</h2>
+            <ul class="projects">
+                <li><strong>2024 :</strong> Development of an interoperability platform for electric mobility using the OCPI protocol.</li>
+                <li><strong>2023 :</strong> Development of a web application for human resources management.</li>
+                <li><strong>2022 :</strong> Architecture of a web application for professional partnerships.</li>
+                <li><strong>2021 :</strong> Application for communication between patients and doctors.</li>
+                <li><strong>2020 :</strong> Decision-support savings application using Machine Learning.</li>
+            </ul>
+        </section>
+
+        <!-- Section formation et compétences -->
+        <section id="resume">
+            <h2>My Academic Background</h2>
+            <ul class="education">
+                <p><li><strong>2024 :</strong> National Engineering Degree, ESPRIT - Specialization in software architecture and scalable application development.</li></p>
+                <p><li><strong>2020 :</strong> Bachelor's Degree in Applied Computer Science to Management, Higher Institute of Management.</li></p>
+            </ul>
+
+            <h2>Technical Skills</h2>
+            <table border="1" style="margin: 0 auto; width: 70%;" cellpadding="10">
+                <tr>
+                    <th>Programming languages</th>
+                    <th>Frameworks</th>
+                    <th>Databases</th>
+                </tr>
+                <tr>
+                    <td>Java</td>
+                    <td>Spring Boot</td>
+                    <td>MongoDB</td>
+                </tr>
+                <tr>
+                    <td>PHP</td>
+                    <td>Symfony</td>
+                    <td>MySQL</td>
+                </tr>
+                <tr>
+                    <td>Python</td>
+                    <td>NestJS</td>
+                    <td>Oracle</td>
+                </tr>
+                <tr>
+                    <td>C</td>
+                    <td>Angular</td>
+                    <td>PostgreSQL</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Section contact -->
+        <section id="contact">
+            <h2>How to contact me?</h2>
+            <table border="1" style="margin: 0 auto; width: 70%;" cellpadding="10">
+                <tr>
+                    <td>Phone number</td>
+                    <td>28316070</td>
+                </tr>
+                <tr>
+                    <td>Email</td>
+                    <td>siwarboutaleb@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>LinkedIn</td>
+                    <td>SiwarBoutaleb</td>
+                </tr>
+            </table>
+        </section>
+
+        <!-- Formulaire de contact -->
+        <section id="contact-form" style="margin-top: 60px;">
+            <h3>You can leave a message</h3>
+            <form style="display: inline-block; text-align: left;">
+                <table cellpadding="10" style="margin: 0 auto; border-collapse: collapse;">
+                    <tr>
+                        <td><label for="name">Name</label></td>
+                        <td><input type="text" id="name" name="name" required placeholder="Enter your name" style="width: 100%; padding: 8px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input type="email" id="email" name="email" required placeholder="Enter your email" style="width: 100%; padding: 8px;"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="message">Message</label></td>
+                        <td><textarea id="message" name="message" rows="5" cols="50" placeholder="Your message..." style="padding: 8px;"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" style="padding: 8px 16px; cursor: pointer;">Send</button>
+                            <button type="reset" style="padding: 8px 16px; cursor: pointer;">Cancel</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </section>
+    </main>
+
+    <!-- Pied de page -->
+    <footer style="margin-top: 60px;">
+        <p>© 2025 Mon Portfolio | Créé par Siwar Boutaleb</p>
+    </footer>
+</body>
+</html>
